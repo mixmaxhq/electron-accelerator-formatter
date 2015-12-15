@@ -64,6 +64,7 @@ To run the browser tests: `npm run-script build-test && npm run-script open-test
 
 ## Release History
 
+* 1.1.1 Add bower.json file
 * 1.1.0 Works in the browser!
 * 1.0.1 Documentation fix
 * 1.0.0 Initial release.
