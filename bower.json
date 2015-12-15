@@ -1,0 +1,25 @@
+{
+  "name": "electron-accelerator-formatter",
+  "description": "Formats an Electron accelerator as a string of Unicode characters.",
+  "main": "src/index.js",
+  "authors": [
+    "Jeff Wear <jeff@mixmax.com> (https://mixmax.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "electron",
+    "accelerator",
+    "Unicode"
+  ],
+  "homepage": "https://github.com/mixmaxhq/electron-accelerator-formatter",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "spec"
+  ]
+}
