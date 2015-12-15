@@ -1,0 +1,27 @@
+{
+  "name": "electron-accelerator-formatter",
+  "version": "1.0.0",
+  "description": "Formats an Electron accelerator as a string of Unicode characters.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mixmaxhq/electron-accelerator-formatter.git"
+  },
+  "keywords": [
+    "electron",
+    "accelerator",
+    "Unicode"
+  ],
+  "author": "Jeff Wear <jeff@mixmax.com> (https://mixmax.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mixmaxhq/electron-accelerator-formatter/issues"
+  },
+  "homepage": "https://github.com/mixmaxhq/electron-accelerator-formatter#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
+}
