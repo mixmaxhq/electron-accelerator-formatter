@@ -3,13 +3,7 @@
     "path": ".",
     "folder_exclude_patterns": [
       "node_modules",
-    ],
-    "file_exclude_patterns": [
-      // Generated source maps.
-      "*.map",
-
-      // Don't search minified javascript files.
-      "*.min.js"
+      "dist"
     ]
   }],
   "settings": {

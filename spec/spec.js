@@ -3,9 +3,8 @@ var formatter;
 
 // Reloading is used to test platform independence.
 function reloadFormatter() {
-  var FORMATTER_PATH = '../src';
-  delete require.cache[require.resolve(FORMATTER_PATH)];
-  formatter = require(FORMATTER_PATH);
+  delete require.cache[require.resolve('../src')];
+  formatter = require('../src');
 }
 reloadFormatter();
 
@@ -13,7 +12,7 @@ var os = require('os');
 
 describe('formatter', function() {
   it('should work', function() {
-    expect(formatter('Shift+M')).toBe('⇧M');
+    expect(formatter('Shift+M')).toBe('\u21e7M');
   });
 
   it('should return the empty string given invalid input', function() {
@@ -29,7 +28,7 @@ describe('formatter', function() {
       });
 
       it('should return the appropriate value for CmdOrCtrl', function() {
-        expect(formatter('CmdOrCtrl+Shift+M')).toBe('⌃⇧M');
+        expect(formatter('CmdOrCtrl+Shift+M')).toBe('\u2303\u21e7M');
       });
     });
 
@@ -40,7 +39,7 @@ describe('formatter', function() {
       });
 
       it('should return the appropriate value for CmdOrCtrl', function() {
-        expect(formatter('CmdOrCtrl+Shift+M')).toBe('⌘⇧M');
+        expect(formatter('CmdOrCtrl+Shift+M')).toBe('\u2318\u21e7M');
       });
     });
   });
