@@ -3,6 +3,8 @@
 Formats an [accelerator](https://github.com/atom/electron/blob/master/docs/api/accelerator.md)
 as a string of Unicode characters.
 
+Handles Windows and Mac, not yet Linux.
+
 ## Installation
 
 ```js
