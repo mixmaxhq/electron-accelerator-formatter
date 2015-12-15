@@ -37,8 +37,8 @@ console.log(acceleratorFormatter(accelerator));
 In the browser:
 
 ```html
-<!-- Loads `electronAcceleratorFormatter` into `window`. -->
-<script src="bower_components/electron-accelerator-formatter/dist/bundle.min.js"></script>
+<!-- Loads `electronAcceleratorFormatter` into `window`. See warning below about minified version.  -->
+<script src="bower_components/electron-accelerator-formatter/dist/bundle.js"></script>
 
 <script type="text/javascript">
   var accelerator = 'CmdOrCtrl+Shift+M';
@@ -47,6 +47,10 @@ In the browser:
   console.log(electronAcceleratorFormatter(accelerator));
 </script>
 ```
+
+*Warning*: there is also a minified version available, `dist/bundle.min.js`, but if you want to use
+that make sure that you are sending the UTF-8 HTTP header from your server or have added `<meta charset="UTF-8">`
+to the page, or the formatter output will be garbled: https://github.com/webpack/webpack/issues/1035.
 
 ## Contributing
 
