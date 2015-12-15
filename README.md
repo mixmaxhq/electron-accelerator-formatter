@@ -14,9 +14,9 @@ npm install electron-accelerator-formatter --save
 ```js
 var acceleratorFormatter = require('electron-accelerator-formatter');
 
-var accelerator = 'Command+Shift+M';
+var accelerator = 'CmdOrCtrl+Shift+M';
 
-// Prints '⌘⇧M'
+// Prints '⌘⇧M' on Mac, '^⇧M' on Windows
 console.log(acceleratorFormatter(accelerator));
 ```
 
