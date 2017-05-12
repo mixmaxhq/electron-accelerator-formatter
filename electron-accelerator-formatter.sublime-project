@@ -6,7 +6,10 @@
       "dist"
     ],
     "file_exclude_patterns": [
-      "spec/browser/spec.bundle.js"
+      "spec/browser/spec.bundle.js",
+
+      // Yarn lock file
+      "yarn.lock"
     ]
   }],
   "settings": {
