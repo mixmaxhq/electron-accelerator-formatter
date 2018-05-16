@@ -12,7 +12,7 @@ Works in both Electron (i.e. Node) and the browser!
 For Electron:
 
 ```js
-yarn add electron-accelerator-formatter
+npm install electron-accelerator-formatter
 ```
 or
 ```js
@@ -62,13 +62,13 @@ We welcome pull requests! Please lint your code.
 
 ### Running tests
 
-To run the Node tests: `yarn test`.
+To run the Node tests: `npm test`.
 
-To run the browser tests: `yarn run-script build-test && yarn run-script open-test`.
+To run the browser tests: `npm run-script build-test && npm run-script open-test`.
 
 ### Building for release
 
-`yarn run-script build`
+`npm run-script build`
 
 ## Release History
 
